@@ -33,6 +33,7 @@
         }
 
         h2 {
+        	text-align: center;
             margin-bottom: 20px;
             font-size: 24px;
             color: #333;
@@ -102,12 +103,31 @@
         .actions button {
             flex: 1;
         }
+        
+        input[type="submit"],
+        a.button {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
         <h2>User List</h2>
+        
+         <form action="/searchByName" style="text-align: right;">
+	        <label for="userName">UserName:</label>
+	        <input type="text" name="userName">
+	        <input type="submit" value="Search">    
+    </form>
         <table>
             <thead>
                 <tr>

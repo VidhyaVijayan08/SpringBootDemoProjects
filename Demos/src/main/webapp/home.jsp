@@ -10,6 +10,9 @@
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             padding: 20px;
+            margin: 0 auto;
+    text-align: center;
+    width: 43%;
         }
 
         h2 {
@@ -26,12 +29,14 @@
         }
 
         legend {
-            font-size: 20px;
-            color: #007bff;
-            margin-bottom: 10px;
+	        font-size: 22px;
+	 		font-weight: 800;
+	 		color: #007bff;
+	        margin-bottom: 10px;
         }
 
         label {
+        
             display: block;
             font-weight: bold;
             margin-bottom: 8px;
@@ -93,7 +98,7 @@
 
     <form action="/searchByName">
 	   		<legend>Search</legend>
-	        <label for="userName">Name:</label>
+	        <label for="userName">UserName:</label>
 	        <input type="text" name="userName"><br>
 	        <input type="submit" value="Search">    
     </form>
@@ -106,7 +111,7 @@
 
     <br>
     <a href="success.jsp" class="button">To Update</a>
-    <a href="finduser.jsp" class="button">To Find a User</a>
+    <a href="findUser.jsp" class="button">To Find a User</a>
 
 </body>
 </html>
